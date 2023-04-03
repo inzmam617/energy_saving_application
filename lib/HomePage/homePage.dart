@@ -1,12 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
+import '../Saving_Energy_Pages/Save_energy.dart';
+
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      // extendBody: true,
       backgroundColor: const Color(0xffC9EAFD),
       body: Column(
         children: [
@@ -24,18 +27,13 @@ class HomePage extends StatelessWidget {
                       fit: BoxFit.cover,
                     )),
               ),
-              //   // width: MediaQuery.of(context).size.width,
-              //   // height: MediaQuery.of(context).size.height / 2.8,
-              //   color: const Color(0xffC9EAFD),
-              //   // child: SvgPicture.asset("assets/login.svg"),
-              // ),
-
               Padding(
-                padding:
-                    const EdgeInsets.symmetric( horizontal: 20),
+                padding: const EdgeInsets.symmetric(horizontal: 20),
                 child: Column(
                   children: [
-                    SizedBox(height: 50,),
+                    SizedBox(
+                      height: 50,
+                    ),
                     Row(
                       children: [
                         Container(
@@ -44,21 +42,20 @@ class HomePage extends StatelessWidget {
                           decoration: BoxDecoration(
                               border: Border.all(color: Colors.black),
                               borderRadius:
-                                  BorderRadius.all(Radius.circular(100)),
-                              image: DecorationImage(
+                                  const BorderRadius.all(Radius.circular(100)),
+                              image: const DecorationImage(
                                   fit: BoxFit.cover,
                                   image: AssetImage(
                                     "assets/prof.jpg",
                                   ))),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           width: 10,
                         ),
-                        Text(
+                        const Text(
                           "Hello Ahmad",
                           style: TextStyle(
-                              color: Colors.black,
-                              fontWeight: FontWeight.bold),
+                              color: Colors.black, fontWeight: FontWeight.bold),
                         )
                       ],
                     ),
@@ -106,8 +103,7 @@ class HomePage extends StatelessWidget {
                                           borderRadius: BorderRadius.only(
                                               topRight: Radius.circular(50),
                                               topLeft: Radius.circular(10),
-                                              bottomRight:
-                                                  Radius.circular(50),
+                                              bottomRight: Radius.circular(50),
                                               bottomLeft:
                                                   Radius.circular(50))))),
                               // decoration: BoxDecoration(
@@ -131,21 +127,21 @@ class HomePage extends StatelessWidget {
               ),
             ]),
           ),
-          Expanded(
-            child: Container(
-              width: MediaQuery.of(context).size.width,
-              height: MediaQuery.of(context).size.height,
-              decoration: const BoxDecoration(
-                  color: Colors.white,
-                  borderRadius: BorderRadius.only(
-                      topLeft: Radius.circular(0),
-                      topRight: Radius.circular(0)),
-                  boxShadow: [
-                    BoxShadow(
-                      color: Colors.grey,
-                      blurRadius: 5.0,
-                    )
-                  ]),
+          Container(
+            width: MediaQuery.of(context).size.width,
+            height: MediaQuery.of(context).size.height -
+                MediaQuery.of(context).size.height / 3.5,
+            decoration: const BoxDecoration(
+                color: Colors.white,
+                borderRadius: BorderRadius.only(
+                    topLeft: Radius.circular(0), topRight: Radius.circular(0)),
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.grey,
+                    blurRadius: 5.0,
+                  )
+                ]),
+            child: SingleChildScrollView(
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -158,8 +154,7 @@ class HomePage extends StatelessWidget {
                           child: Container(
                             decoration: const BoxDecoration(
                                 boxShadow: [
-                                  BoxShadow(
-                                      color: Colors.grey, blurRadius: 5.0)
+                                  BoxShadow(color: Colors.grey, blurRadius: 5.0)
                                 ],
                                 color: Colors.white,
                                 borderRadius:
@@ -181,11 +176,11 @@ class HomePage extends StatelessWidget {
                             height: 165,
                             decoration: const BoxDecoration(
                                 boxShadow: [
-                                  BoxShadow(
-                                      color: Colors.grey, blurRadius: 5.0)
+                                  BoxShadow(color: Colors.grey, blurRadius: 5.0)
                                 ],
                                 color: Colors.white,
-                                borderRadius: BorderRadius.all(Radius.circular(20))),
+                                borderRadius:
+                                    BorderRadius.all(Radius.circular(20))),
                           ),
                         ),
                       ),
@@ -197,53 +192,53 @@ class HomePage extends StatelessWidget {
                             // width: 135,
                             decoration: const BoxDecoration(
                                 boxShadow: [
-                                  BoxShadow(
-                                      color: Colors.grey, blurRadius: 5.0)
+                                  BoxShadow(color: Colors.grey, blurRadius: 5.0)
                                 ],
                                 color: Colors.white,
                                 borderRadius:
                                     BorderRadius.all(Radius.circular(20))),
                             child: Row(
-                              mainAxisAlignment:
-                                  MainAxisAlignment.spaceBetween,
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
                                 Padding(
-                                  padding: const EdgeInsets.only(
-                                      top: 30, left: 20),
+                                  padding:
+                                      const EdgeInsets.only(top: 30, left: 20),
                                   child: Column(
                                     crossAxisAlignment:
                                         CrossAxisAlignment.start,
                                     children: [
-                                      Text(
+                                      const Text(
                                         "How to ",
                                         style: TextStyle(
                                             color: Colors.black,
                                             fontSize: 20,
                                             fontWeight: FontWeight.w300),
                                       ),
-                                      Text(
+                                      const Text(
                                         "save energy?",
                                         style: TextStyle(
                                             color: Colors.black,
                                             fontSize: 20,
                                             fontWeight: FontWeight.w300),
                                       ),
-                                      SizedBox(
+                                      const SizedBox(
                                         height: 10,
                                       ),
                                       ElevatedButton(
                                           style: ButtonStyle(
-                                              shape:
-                                                  MaterialStateProperty.all(
-                                                      RoundedRectangleBorder(
-                                                          borderRadius:
-                                                              BorderRadius
-                                                                  .circular(
-                                                                      100))),
+                                              shape: MaterialStateProperty.all(
+                                                  RoundedRectangleBorder(
+                                                      borderRadius:
+                                                          BorderRadius.circular(
+                                                              100))),
                                               backgroundColor:
                                                   MaterialStateProperty.all(
                                                       Colors.cyan)),
-                                          onPressed: () {},
+                                          onPressed: () {
+                                            Navigator.of(context).push(MaterialPageRoute(builder: (BuildContext context) {
+                                              return SaveEnergy();
+                                            }));
+                                          },
                                           child: Text("Get Started"))
                                     ],
                                   ),
@@ -269,228 +264,246 @@ class HomePage extends StatelessWidget {
                   Padding(
                     padding: const EdgeInsets.symmetric(
                         horizontal: 20, vertical: 10),
-                    child: SingleChildScrollView(
-                      child: Column(
-                        children: [
-                          Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            children: [
-                              InkWell(
-                                onTap:(){},
-                                child: Stack(children: [
-                                  Container(
-                                    width: MediaQuery.of(context).size.width / 2.5,
-                                    height: 130,
-                                    decoration: const BoxDecoration(
-                                        borderRadius: BorderRadius.only(
-                                            bottomLeft: Radius.circular(20),
-                                            topRight: Radius.circular(20)
-                                            // bottomRight: Radius.circular(5)
-                                            ),
-                                        boxShadow: [
-                                          BoxShadow(
-                                              color: Colors.grey, blurRadius: 5.0)
-                                        ],
-                                        color: Color(0xffC9EAFD),),
-                                    child: Padding(
-                                      padding: const EdgeInsets.only(bottom: 10),
-                                      child: Align(
-                                        alignment: Alignment.bottomCenter,
-                                        child: Text("Consumption Bills",style: TextStyle(color: Colors.white,),),
+                    child: Column(
+                      children: [
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            InkWell(
+                              onTap: () {},
+                              child: Stack(children: [
+                                Container(
+                                  width:
+                                      MediaQuery.of(context).size.width / 2.5,
+                                  height: 130,
+                                  decoration: const BoxDecoration(
+                                    borderRadius: BorderRadius.only(
+                                        bottomLeft: Radius.circular(20),
+                                        topRight: Radius.circular(20)
+                                        // bottomRight: Radius.circular(5)
+                                        ),
+                                    boxShadow: [
+                                      BoxShadow(
+                                          color: Colors.grey, blurRadius: 5.0)
+                                    ],
+                                    color: Color(0xffC9EAFD),
+                                  ),
+                                  child: Padding(
+                                    padding:
+                                        const EdgeInsets.only(bottom: 10),
+                                    child: Align(
+                                      alignment: Alignment.bottomCenter,
+                                      child: Text(
+                                        "Consumption Bills",
+                                        style: TextStyle(
+                                          color: Colors.white,
+                                        ),
                                       ),
                                     ),
-
                                   ),
-                                  Container(
-                                    decoration: const BoxDecoration(
-                                      boxShadow: [
-                                        BoxShadow(
-                                          color: Colors.grey,
-                                          blurRadius: 5.0
-                                        )
-                                      ],
-                                      color: Colors.white,
-                                      borderRadius: BorderRadius.only(
-                                          bottomLeft: Radius.circular(20),
-                                          topRight: Radius.circular(20)
-                                          // bottomRight: Radius.circular(5)
-                                          ),
-                                    ),
-                                    width: MediaQuery.of(context).size.width / 2.5,
-                                    height: 100,
-                                    child: SvgPicture.asset("assets/bill.svg",fit: BoxFit.scaleDown,),
-                                    
-
+                                ),
+                                Container(
+                                  decoration: const BoxDecoration(
+                                    boxShadow: [
+                                      BoxShadow(
+                                          color: Colors.grey, blurRadius: 5.0)
+                                    ],
+                                    color: Colors.white,
+                                    borderRadius: BorderRadius.only(
+                                        bottomLeft: Radius.circular(20),
+                                        topRight: Radius.circular(20)
+                                        // bottomRight: Radius.circular(5)
+                                        ),
                                   ),
-                                ]),
-                              ),
-                              InkWell(
-                                onTap:(){},
-                                child: Stack(children: [
-                                  Container(
-                                    width: MediaQuery.of(context).size.width / 2.5,
-                                    height: 130,
-                                    decoration: const BoxDecoration(
-                                        borderRadius: BorderRadius.only(
-                                            bottomLeft: Radius.circular(20),
-                                            topRight: Radius.circular(20)
-                                            // bottomRight: Radius.circular(5)
-                                            ),
-                                        boxShadow: [
-                                          BoxShadow(
-                                              color: Colors.grey, blurRadius: 5.0)
-                                        ],
-                                        color: Color(0xffC9EAFD),),
-                                    child: Padding(
-                                      padding: const EdgeInsets.only(bottom: 10),
-                                      child: Align(
-                                        alignment: Alignment.bottomCenter,
-                                        child: Text("Services Interruption",style: TextStyle(color: Colors.white,),),
+                                  width:
+                                      MediaQuery.of(context).size.width / 2.5,
+                                  height: 100,
+                                  child: SvgPicture.asset(
+                                    "assets/bill.svg",
+                                    fit: BoxFit.scaleDown,
+                                  ),
+                                ),
+                              ]),
+                            ),
+                            InkWell(
+                              onTap: () {},
+                              child: Stack(children: [
+                                Container(
+                                  width:
+                                      MediaQuery.of(context).size.width / 2.5,
+                                  height: 130,
+                                  decoration: const BoxDecoration(
+                                    borderRadius: BorderRadius.only(
+                                        bottomLeft: Radius.circular(20),
+                                        topRight: Radius.circular(20)
+                                        // bottomRight: Radius.circular(5)
+                                        ),
+                                    boxShadow: [
+                                      BoxShadow(
+                                          color: Colors.grey, blurRadius: 5.0)
+                                    ],
+                                    color: Color(0xffC9EAFD),
+                                  ),
+                                  child: Padding(
+                                    padding:
+                                        const EdgeInsets.only(bottom: 10),
+                                    child: Align(
+                                      alignment: Alignment.bottomCenter,
+                                      child: Text(
+                                        "Services Interruption",
+                                        style: TextStyle(
+                                          color: Colors.white,
+                                        ),
                                       ),
                                     ),
-
-
-
                                   ),
-                                  Container(
-                                    decoration: const BoxDecoration(
-                                      boxShadow: [
-                                        BoxShadow(
-
-                                          color: Colors.grey,
-                                          blurRadius: 5.0
-                                        )
-                                      ],
-                                      color: Colors.white,
-                                      borderRadius: BorderRadius.only(
-                                          bottomLeft: Radius.circular(20),
-                                          topRight: Radius.circular(20)
-                                          // bottomRight: Radius.circular(5)
-                                          ),
-                                    ),
-                                    width: MediaQuery.of(context).size.width / 2.5,
-                                    height: 100,
-                                    child: SvgPicture.asset("assets/s.svg",fit: BoxFit.scaleDown,),
+                                ),
+                                Container(
+                                  decoration: const BoxDecoration(
+                                    boxShadow: [
+                                      BoxShadow(
+                                          color: Colors.grey, blurRadius: 5.0)
+                                    ],
+                                    color: Colors.white,
+                                    borderRadius: BorderRadius.only(
+                                        bottomLeft: Radius.circular(20),
+                                        topRight: Radius.circular(20)
+                                        // bottomRight: Radius.circular(5)
+                                        ),
                                   ),
-                                ]),
-                              ),
-
-
-                            ],
-                          ),
-                          SizedBox(height: 20,),
-                          Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            children: [
-                              InkWell(
-                                onTap:(){},
-                                child: Stack(children: [
-                                  Container(
-                                    width: MediaQuery.of(context).size.width / 2.5,
-                                    height: 130,
-                                    decoration: const BoxDecoration(
-                                        borderRadius: BorderRadius.only(
-                                            bottomLeft: Radius.circular(20),
-                                            topRight: Radius.circular(20)
-                                            // bottomRight: Radius.circular(5)
-                                            ),
-                                        boxShadow: [
-                                          BoxShadow(
-                                              color: Colors.grey, blurRadius: 5.0)
-                                        ],
-                                        color: Color(0xffC9EAFD),),
-                                    child: Padding(
-                                      padding: const EdgeInsets.only(bottom: 10),
-                                      child: Align(
-                                        alignment: Alignment.bottomCenter,
-                                        child: Text("Services Tracking",style: TextStyle(color: Colors.white,),),
+                                  width:
+                                      MediaQuery.of(context).size.width / 2.5,
+                                  height: 100,
+                                  child: SvgPicture.asset(
+                                    "assets/s.svg",
+                                    fit: BoxFit.scaleDown,
+                                  ),
+                                ),
+                              ]),
+                            ),
+                          ],
+                        ),
+                        SizedBox(
+                          height: 20,
+                        ),
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            InkWell(
+                              onTap: () {},
+                              child: Stack(children: [
+                                Container(
+                                  width:
+                                      MediaQuery.of(context).size.width / 2.5,
+                                  height: 130,
+                                  decoration: const BoxDecoration(
+                                    borderRadius: BorderRadius.only(
+                                        bottomLeft: Radius.circular(20),
+                                        topRight: Radius.circular(20)
+                                        // bottomRight: Radius.circular(5)
+                                        ),
+                                    boxShadow: [
+                                      BoxShadow(
+                                          color: Colors.grey, blurRadius: 5.0)
+                                    ],
+                                    color: Color(0xffC9EAFD),
+                                  ),
+                                  child: Padding(
+                                    padding:
+                                        const EdgeInsets.only(bottom: 10),
+                                    child: Align(
+                                      alignment: Alignment.bottomCenter,
+                                      child: Text(
+                                        "Services Tracking",
+                                        style: TextStyle(
+                                          color: Colors.white,
+                                        ),
                                       ),
                                     ),
-
                                   ),
-                                  Container(
-                                    decoration: const BoxDecoration(
-                                      boxShadow: [
-                                        BoxShadow(
-                                          color: Colors.grey,
-                                          blurRadius: 5.0
-                                        )
-                                      ],
-                                      color: Colors.white,
-                                      borderRadius: BorderRadius.only(
-                                          bottomLeft: Radius.circular(20),
-                                          topRight: Radius.circular(20)
-                                          // bottomRight: Radius.circular(5)
-                                          ),
-                                    ),
-                                    width: MediaQuery.of(context).size.width / 2.5,
-                                    height: 100,
-                                    child: SvgPicture.asset("assets/tracking-number (1).svg",fit: BoxFit.scaleDown,),
-
+                                ),
+                                Container(
+                                  decoration: const BoxDecoration(
+                                    boxShadow: [
+                                      BoxShadow(
+                                          color: Colors.grey, blurRadius: 5.0)
+                                    ],
+                                    color: Colors.white,
+                                    borderRadius: BorderRadius.only(
+                                        bottomLeft: Radius.circular(20),
+                                        topRight: Radius.circular(20)
+                                        // bottomRight: Radius.circular(5)
+                                        ),
                                   ),
-                                ]),
-                              ),
-                              InkWell(
-                                onTap:(){},
-                                child: Stack(children: [
-                                  Container(
-                                    width: MediaQuery.of(context).size.width / 2.5,
-                                    height: 130,
-                                    decoration: const BoxDecoration(
-                                        borderRadius: BorderRadius.only(
-                                            bottomLeft: Radius.circular(20),
-                                            topRight: Radius.circular(20)
-                                            // bottomRight: Radius.circular(5)
-                                            ),
-                                        boxShadow: [
-                                          BoxShadow(
-                                              color: Colors.grey, blurRadius: 5.0)
-                                        ],
-                                        color: Color(0xffC9EAFD),),
-                                    child: Padding(
-                                      padding: const EdgeInsets.only(bottom: 10),
-                                      child: Align(
-                                        alignment: Alignment.bottomCenter,
-                                        child: Text("Tips",style: TextStyle(color: Colors.white,),),
+                                  width:
+                                      MediaQuery.of(context).size.width / 2.5,
+                                  height: 100,
+                                  child: SvgPicture.asset(
+                                    "assets/tracking-number (1).svg",
+                                    fit: BoxFit.scaleDown,
+                                  ),
+                                ),
+                              ]),
+                            ),
+                            InkWell(
+                              onTap: () {},
+                              child: Stack(children: [
+                                Container(
+                                  width:
+                                      MediaQuery.of(context).size.width / 2.5,
+                                  height: 130,
+                                  decoration: const BoxDecoration(
+                                    borderRadius: BorderRadius.only(
+                                        bottomLeft: Radius.circular(20),
+                                        topRight: Radius.circular(20)
+                                        // bottomRight: Radius.circular(5)
+                                        ),
+                                    boxShadow: [
+                                      BoxShadow(
+                                          color: Colors.grey, blurRadius: 5.0)
+                                    ],
+                                    color: Color(0xffC9EAFD),
+                                  ),
+                                  child: Padding(
+                                    padding:
+                                        const EdgeInsets.only(bottom: 10),
+                                    child: Align(
+                                      alignment: Alignment.bottomCenter,
+                                      child: Text(
+                                        "Tips",
+                                        style: TextStyle(
+                                          color: Colors.white,
+                                        ),
                                       ),
                                     ),
-
-
-
                                   ),
-                                  Container(
-                                    decoration: const BoxDecoration(
-                                      boxShadow: [
-                                        BoxShadow(
-
-                                          color: Colors.grey,
-                                          blurRadius: 5.0
-                                        )
-                                      ],
-                                      color: Colors.white,
-                                      borderRadius: BorderRadius.only(
-                                          bottomLeft: Radius.circular(20),
-                                          topRight: Radius.circular(20)
-                                          // bottomRight: Radius.circular(5)
-                                          ),
-                                    ),
-                                    width: MediaQuery.of(context).size.width / 2.5,
-                                    height: 100,
-                                    child: SvgPicture.asset("assets/solution-icon.svg",fit: BoxFit.scaleDown,),
+                                ),
+                                Container(
+                                  decoration: const BoxDecoration(
+                                    boxShadow: [
+                                      BoxShadow(
+                                          color: Colors.grey, blurRadius: 5.0)
+                                    ],
+                                    color: Colors.white,
+                                    borderRadius: BorderRadius.only(
+                                        bottomLeft: Radius.circular(20),
+                                        topRight: Radius.circular(20)
+                                        // bottomRight: Radius.circular(5)
+                                        ),
                                   ),
-                                ]),
-                              ),
-
-
-
-
-
-
-                            ],
-                          ),
-
-                        ],
-                      ),
+                                  width:
+                                      MediaQuery.of(context).size.width / 2.5,
+                                  height: 100,
+                                  child: SvgPicture.asset(
+                                    "assets/solution-icon.svg",
+                                    fit: BoxFit.scaleDown,
+                                  ),
+                                ),
+                              ]),
+                            ),
+                          ],
+                        ),
+                      ],
                     ),
                   ),
                 ],
