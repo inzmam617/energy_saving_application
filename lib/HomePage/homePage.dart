@@ -288,9 +288,9 @@ class HomePage extends StatelessWidget {
                                     ],
                                     color: Color(0xffC9EAFD),
                                   ),
-                                  child: Padding(
+                                  child: const Padding(
                                     padding:
-                                        const EdgeInsets.only(bottom: 10),
+                                        EdgeInsets.only(bottom: 10),
                                     child: Align(
                                       alignment: Alignment.bottomCenter,
                                       child: Text(
