@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
-import 'ElectricityparagraphPageOne.dart';
-import 'ElectricityparagraphPageTwo.dart';
+import 'Save_Electricity.dart';
 
-class Save_Electricity extends StatelessWidget {
-  const Save_Electricity({Key? key}) : super(key: key);
+class ElectricityParagraphPageOne extends StatelessWidget {
+  const ElectricityParagraphPageOne({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -18,9 +17,12 @@ class Save_Electricity extends StatelessWidget {
             width: MediaQuery.of(context).size.width,
             child: Stack(children: [
               Center(
-                child: SvgPicture.asset(
-                  "assets/Group 4380.svg",
-                  fit: BoxFit.cover,
+                child: Padding(
+                  padding: const EdgeInsets.symmetric(vertical: 20),
+                  child: SvgPicture.asset(
+                    "assets/cables-cable-svgrepo-com.svg",
+                    fit: BoxFit.scaleDown,
+                  ),
                 ),
               ),
               Padding(
@@ -99,15 +101,15 @@ class Save_Electricity extends StatelessWidget {
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               Text(
-                                "Save Electricity",
+                                "Cables and OHL",
                                 style: TextStyle(
-                                    color: Colors.black, fontSize: 25),
+                                    color: Colors.black54, fontSize: 25),
                               ),
-                              Text(
-                                "Match the text with Graphics",
-                                style: TextStyle(
-                                    color: Colors.black87, fontSize: 12),
-                              )
+                              // Text(
+                              //   "Flip to find a match!",
+                              //   style: TextStyle(
+                              //       color: Colors.black, fontSize: 12),
+                              // )
                             ],
                           ),
                         ),
@@ -118,82 +120,13 @@ class Save_Electricity extends StatelessWidget {
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                           children: [
-                            Row(
-                              children: [
-                                Container(
-                                  height: 100,
-                                  color: Color(0xffD5ECFE),
-                                  width: MediaQuery.of(context).size.width / 2,
-                                  child: Center(
-                                    child: Text(
-                                      "Unplug the cable",
-                                      style: TextStyle(
-                                          color: Colors.black, fontSize: 20),
-                                    ),
-                                  ),
-                                ),
-                                Container(
-                                  height: 100,
-                                  color: Color(0xffBEE3FD),
-                                  width: MediaQuery.of(context).size.width / 2,
-                                  child: SvgPicture.asset(
-                                    "assets/bed.svg",
-                                    fit: BoxFit.scaleDown,
-                                  ),
-                                ),
-                              ],
-                            ),
-                            SizedBox(height: 10,),
-                            Row(
-                              children: [
-                                Container(
-                                  height: 100,
-                                  color: Color(0xffD5ECFE),
-                                  width: MediaQuery.of(context).size.width / 2,
-                                  child: Center(
-                                    child: Text(
-                                      "Turn off Buttons",
-                                      style: TextStyle(
-                                          color: Colors.black, fontSize: 20),
-                                    ),
-                                  ),
-                                ),
-                                Container(
-                                  height: 100,
-                                  color: Color(0xffBEE3FD),
-                                  width: MediaQuery.of(context).size.width / 2,
-                                  child: SvgPicture.asset(
-                                    "assets/btn.svg",
-                                    fit: BoxFit.scaleDown,
-                                  ),
-                                ),
-                              ],
-                            ),
-                            SizedBox(height: 10,),
-                            Row(
-                              children: [
-                                Container(
-                                  height: 100,
-                                  color: Color(0xffD5ECFE),
-                                  width: MediaQuery.of(context).size.width / 2,
-                                  child: Center(
-                                    child: Text(
-                                      "Switch off light \n when sleeping",
-                                      style: TextStyle(
-                                          color: Colors.black, fontSize: 20),
-                                    ),
-                                  ),
-                                ),
-                                Container(
-                                  height: 100,
-                                  color: Color(0xffBEE3FD),
-                                  width: MediaQuery.of(context).size.width / 2,
-                                  child: SvgPicture.asset(
-                                    "assets/cable.svg",
-                                    fit: BoxFit.scaleDown,
-                                  ),
-                                ),
-                              ],
+                            Padding(
+                              padding: const EdgeInsets.symmetric(horizontal: 20,vertical: 20),
+                              child: Padding(
+                                padding: const EdgeInsets.all(10.0),
+                                child: Text("Electricity Transmission network expands utilizing high quality products from approved manufacturers ensuring high performance & reliability.n May 2021, the length of cables in the transmission network reached 3636 km, and the total length of overhead lines (OHL) 2003 km of different voltage levels. As for the distribution network, cable lengths reached 21000 km and overhead lines 2000 km, with an increase of 6% compared to May 2020. As per Electricity transmission network plan, the total length of overhead lines (OHL) will be 2310 km in January 2022.",
+                                  style:TextStyle(color: Colors.black54,fontSize: 18) ,textAlign: TextAlign.start,),
+                              ),
                             ),
 
                             const SizedBox(
@@ -210,12 +143,12 @@ class Save_Electricity extends StatelessWidget {
                                               borderRadius: BorderRadius.all(
                                                   Radius.circular(50)))),
                                       backgroundColor:
-                                          MaterialStateProperty.all(
-                                              Colors.cyan)),
+                                      MaterialStateProperty.all(Colors.cyan)),
                                   onPressed: () {
                                     Navigator.of(context).push(MaterialPageRoute(builder: (BuildContext context) {
-                                      return ElectricityParagraphPageTwo();
+                                      return Save_Electricity();
                                     }));
+
                                   },
                                   child: Text(
                                     "Next",
