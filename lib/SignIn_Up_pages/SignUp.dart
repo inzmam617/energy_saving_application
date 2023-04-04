@@ -168,7 +168,7 @@ class SignUp extends StatelessWidget {
                                   MaterialStateProperty.all(Colors.cyan)),
                               onPressed: () {},
                               child: const Text(
-                                "Sign In",
+                                "Sign Up",
                                 style: TextStyle(color: Colors.white),
                               ),
                             ),
@@ -194,7 +194,23 @@ class SignUp extends StatelessWidget {
                           children: [
                             InkWell(
                               onTap: () {
-                                print("object");
+                                showDialog<String>(
+                                  context: context,
+                                  builder: (BuildContext context) => AlertDialog(
+                                    title: const Text('Feature Upcoming'),
+                                    // content: const Text('AlertDialog description'),
+                                    actions: <Widget>[
+                                      // TextButton(
+                                      //   onPressed: () => Navigator.pop(context, 'Cancel'),
+                                      //   child: const Text('Cancel'),
+                                      // ),
+                                      TextButton(
+                                        onPressed: () => Navigator.pop(context, 'OK'),
+                                        child: const Text('OK'),
+                                      ),
+                                    ],
+                                  ),
+                                );
                               },
                               child: Container(
                                 height: 50,
@@ -211,7 +227,23 @@ class SignUp extends StatelessWidget {
                             ),
                             InkWell(
                               onTap: () {
-                                print("object");
+                                showDialog<String>(
+                                  context: context,
+                                  builder: (BuildContext context) => AlertDialog(
+                                    title: const Text('Feature Upcoming'),
+                                    // content: const Text('AlertDialog description'),
+                                    actions: <Widget>[
+                                      // TextButton(
+                                      //   onPressed: () => Navigator.pop(context, 'Cancel'),
+                                      //   child: const Text('Cancel'),
+                                      // ),
+                                      TextButton(
+                                        onPressed: () => Navigator.pop(context, 'OK'),
+                                        child: const Text('OK'),
+                                      ),
+                                    ],
+                                  ),
+                                );
                               },
                               child: Container(
                                 height: 50,
@@ -228,7 +260,23 @@ class SignUp extends StatelessWidget {
                             ),
                             InkWell(
                               onTap: () {
-                                print("object");
+                                showDialog<String>(
+                                  context: context,
+                                  builder: (BuildContext context) => AlertDialog(
+                                    title: const Text('Feature Upcoming'),
+                                    // content: const Text('AlertDialog description'),
+                                    actions: <Widget>[
+                                      // TextButton(
+                                      //   onPressed: () => Navigator.pop(context, 'Cancel'),
+                                      //   child: const Text('Cancel'),
+                                      // ),
+                                      TextButton(
+                                        onPressed: () => Navigator.pop(context, 'OK'),
+                                        child: const Text('OK'),
+                                      ),
+                                    ],
+                                  ),
+                                );
                               },
                               child: Container(
                                 height: 50,

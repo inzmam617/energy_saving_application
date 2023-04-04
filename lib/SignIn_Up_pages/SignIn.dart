@@ -5,11 +5,17 @@ import 'package:flutter_svg/svg.dart';
 import '../Bottombar/BottomBar.dart';
 import '../HomePage/homePage.dart';
 
-class SignIn extends StatelessWidget {
+class SignIn extends StatefulWidget {
   const SignIn({Key? key}) : super(key: key);
 
   @override
+  State<SignIn> createState() => _SignInState();
+}
+
+class _SignInState extends State<SignIn> {
+  @override
   Widget build(BuildContext context) {
+
     return Scaffold(
       backgroundColor: const Color(0xffC9EAFD),
       body: Stack(children: [
@@ -63,11 +69,21 @@ class SignIn extends StatelessWidget {
                             boxShadow: [
                               BoxShadow(color: Colors.blue, blurRadius: 5.0)
                             ],
-                            borderRadius: BorderRadius.all(Radius.circular(50)),
+                            borderRadius:
+                                BorderRadius.all(Radius.circular(50)),
                           ),
-                          child: TextField(
+                          child: TextFormField(
+                            // validator: (value) {
+                            //   if (value == null || value.isEmpty) {
+                            //     return 'Please enter Email';
+                            //   }
+                            //   return null;
+                            // },
                             decoration: InputDecoration(
-                                prefixIcon: SvgPicture.asset("assets/email.svg",fit: BoxFit.scaleDown,),
+                                prefixIcon: SvgPicture.asset(
+                                  "assets/email.svg",
+                                  fit: BoxFit.scaleDown,
+                                ),
 
                                 // contentPadding: EdgeInsets.only(left: 20),
                                 hintStyle: TextStyle(
@@ -87,14 +103,17 @@ class SignIn extends StatelessWidget {
                             boxShadow: [
                               BoxShadow(color: Colors.blue, blurRadius: 5.0)
                             ],
-                            borderRadius: BorderRadius.all(Radius.circular(50)),
+                            borderRadius:
+                                BorderRadius.all(Radius.circular(50)),
                           ),
                           child: TextField(
-                            // keyboardType: TextInputType.number,
-
                             decoration: InputDecoration(
-                                prefixIcon: SvgPicture.asset("assets/lock.svg",fit: BoxFit.scaleDown),
-                                suffixIcon: SvgPicture.asset("assets/eye.svg",fit: BoxFit.scaleDown),
+                                prefixIcon: SvgPicture.asset(
+                                    "assets/lock.svg",
+                                    fit: BoxFit.scaleDown),
+                                suffixIcon: SvgPicture.asset(
+                                    "assets/eye.svg",
+                                    fit: BoxFit.scaleDown),
                                 // contentPadding: EdgeInsets.only(left: 20),
                                 hintStyle: TextStyle(
                                   color: Colors.grey,
@@ -129,11 +148,16 @@ class SignIn extends StatelessWidget {
                                           borderRadius: BorderRadius.all(
                                               Radius.circular(50)))),
                                   backgroundColor:
-                                      MaterialStateProperty.all(Colors.cyan)),
+                                      MaterialStateProperty.all(
+                                          Colors.cyan)),
                               onPressed: () {
-                                Navigator.of(context).push(MaterialPageRoute(builder: (BuildContext context) {
+                                // if(_formKey.currentState!.validate()){
+                                Navigator.of(context).push(
+                                    MaterialPageRoute(
+                                        builder: (BuildContext context) {
                                   return BottomBar();
                                 }));
+                                // }
                               },
                               child: const Text(
                                 "Sign In",
@@ -162,16 +186,35 @@ class SignIn extends StatelessWidget {
                           children: [
                             InkWell(
                               onTap: () {
-                                print("object");
+                                showDialog<String>(
+                                  context: context,
+                                  builder: (BuildContext context) => AlertDialog(
+                                    title: const Text('Feature Upcoming'),
+                                    // content: const Text('AlertDialog description'),
+                                    actions: <Widget>[
+                                      // TextButton(
+                                      //   onPressed: () => Navigator.pop(context, 'Cancel'),
+                                      //   child: const Text('Cancel'),
+                                      // ),
+                                      TextButton(
+                                        onPressed: () => Navigator.pop(context, 'OK'),
+                                        child: const Text('OK'),
+                                      ),
+                                    ],
+                                  ),
+                                );
                               },
                               child: Container(
                                 height: 50,
                                 width: 50,
                                 decoration: BoxDecoration(
-                                    borderRadius:
-                                        BorderRadius.all(Radius.circular(100)),
+                                    borderRadius: BorderRadius.all(
+                                        Radius.circular(100)),
                                     border: Border.all(color: Colors.grey)),
-                                child: SvgPicture.asset("assets/g.svg",fit: BoxFit.scaleDown,),
+                                child: SvgPicture.asset(
+                                  "assets/g.svg",
+                                  fit: BoxFit.scaleDown,
+                                ),
                               ),
                             ),
                             SizedBox(
@@ -179,16 +222,33 @@ class SignIn extends StatelessWidget {
                             ),
                             InkWell(
                               onTap: () {
-                                print("object");
+                                showDialog<String>(
+                                  context: context,
+                                  builder: (BuildContext context) => AlertDialog(
+                                    title: const Text('Feature Upcoming'),
+                                    // content: const Text('AlertDialog description'),
+                                    actions: <Widget>[
+                                      // TextButton(
+                                      //   onPressed: () => Navigator.pop(context, 'Cancel'),
+                                      //   child: const Text('Cancel'),
+                                      // ),
+                                      TextButton(
+                                        onPressed: () => Navigator.pop(context, 'OK'),
+                                        child: const Text('OK'),
+                                      ),
+                                    ],
+                                  ),
+                                );
                               },
                               child: Container(
                                 height: 50,
                                 width: 50,
                                 decoration: BoxDecoration(
-                                    borderRadius:
-                                        BorderRadius.all(Radius.circular(100)),
+                                    borderRadius: BorderRadius.all(
+                                        Radius.circular(100)),
                                     border: Border.all(color: Colors.grey)),
-                                child:  SvgPicture.asset("assets/f.svg",fit: BoxFit.scaleDown),
+                                child: SvgPicture.asset("assets/f.svg",
+                                    fit: BoxFit.scaleDown),
                               ),
                             ),
                             SizedBox(
@@ -196,16 +256,33 @@ class SignIn extends StatelessWidget {
                             ),
                             InkWell(
                               onTap: () {
-                                print("object");
+                                showDialog<String>(
+                                  context: context,
+                                  builder: (BuildContext context) => AlertDialog(
+                                    title: const Text('Feature Upcoming'),
+                                    // content: const Text('AlertDialog description'),
+                                    actions: <Widget>[
+                                      // TextButton(
+                                      //   onPressed: () => Navigator.pop(context, 'Cancel'),
+                                      //   child: const Text('Cancel'),
+                                      // ),
+                                      TextButton(
+                                        onPressed: () => Navigator.pop(context, 'OK'),
+                                        child: const Text('OK'),
+                                      ),
+                                    ],
+                                  ),
+                                );
                               },
                               child: Container(
                                 height: 50,
                                 width: 50,
                                 decoration: BoxDecoration(
-                                    borderRadius:
-                                        const BorderRadius.all(Radius.circular(100)),
+                                    borderRadius: const BorderRadius.all(
+                                        Radius.circular(100)),
                                     border: Border.all(color: Colors.grey)),
-                                child:  SvgPicture.asset("assets/a.svg",fit: BoxFit.scaleDown),
+                                child: SvgPicture.asset("assets/a.svg",
+                                    fit: BoxFit.scaleDown),
                               ),
                             ),
                           ],
@@ -219,8 +296,10 @@ class SignIn extends StatelessWidget {
                             children: [
                               Text("Dont have an Account?"),
                               InkWell(
-                                onTap: (){
-                                  Navigator.of(context).push(MaterialPageRoute(builder: (BuildContext context) {
+                                onTap: () {
+                                  Navigator.of(context).push(
+                                      MaterialPageRoute(
+                                          builder: (BuildContext context) {
                                     return SignUp();
                                   }));
                                 },

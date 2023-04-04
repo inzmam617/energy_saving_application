@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
 import '../Quizespage/SaveWaterQuiz.dart';
+import 'Save_Electricity.dart';
 
 class SaveEnergy extends StatelessWidget {
   const SaveEnergy({Key? key}) : super(key: key);
@@ -155,6 +156,9 @@ class SaveEnergy extends StatelessWidget {
                     padding: const EdgeInsets.all(8.0),
                     child: InkWell(
                       onTap: (){
+                        Navigator.of(context).push(MaterialPageRoute(builder: (BuildContext context) {
+                          return Save_Electricity();
+                        }));
 
                       },
                       child: SizedBox(

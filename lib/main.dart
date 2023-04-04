@@ -1,6 +1,10 @@
 import 'package:energy_saving_application/SignIn_Up_pages/SignIn.dart';
 import 'package:flutter/material.dart';
 
+import 'StartingScreens/PageOne.dart';
+import 'StartingScreens/PageThree.dart';
+import 'StartingScreens/PageTwo.dart';
+
 
 void main() {
   runApp(MaterialApp(
@@ -16,7 +20,10 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return PageView(
       children: [
-        SignIn(),
+        // SignIn(),
+        PageOne(),
+        PageTwo(),
+        PageThree(),
 
       ],
     );

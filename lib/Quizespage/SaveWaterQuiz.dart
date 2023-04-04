@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
 import '../Saving_Energy_Pages/Save_water_pagetwo.dart';
+import '../Saving_Energy_Pages/WaterparagraphPageOne.dart';
 
 class WaterQuiz extends StatefulWidget {
   const WaterQuiz({Key? key}) : super(key: key);
@@ -382,7 +383,7 @@ class _WaterQuizState extends State<WaterQuiz> {
                                   MaterialStateProperty.all(Colors.cyan)),
                           onPressed: () {
                             Navigator.of(context).push(MaterialPageRoute(builder: (BuildContext context) {
-                              return Save_Water_Page();
+                              return WaterParagraphPage();
                             }));
                           },
                           child: Text(

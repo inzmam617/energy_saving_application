@@ -78,7 +78,7 @@ class _BottomBarState extends State<BottomBar> {
                       //padding: const EdgeInsets.all(7),
                         child:
                         const Icon(
-                          Icons.category_outlined,
+                          Icons.grid_view,
                           // color: Colors.grey,
                         ))
                     ,
@@ -89,7 +89,7 @@ class _BottomBarState extends State<BottomBar> {
                     icon: Container(
                       //padding: const EdgeInsets.all(7),
                         child: const Icon(
-                          Icons.location_on_sharp,
+                          Icons.add_location_outlined,
                           // color: Colors.grey,
                         )),
                   ),
@@ -106,8 +106,8 @@ class _BottomBarState extends State<BottomBar> {
                 ],
                 // currentIndex: _selectedIndex,
                 currentIndex: _selectedIndex,
-                selectedItemColor: Colors.black,
-                unselectedItemColor: Colors.green,
+                selectedItemColor: Colors.blue,
+                unselectedItemColor: Colors.grey,
                 showSelectedLabels: false,
                 showUnselectedLabels: false,
                 onTap: _onTappedBar,
