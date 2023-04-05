@@ -3,6 +3,7 @@
 A new Flutter project.
 
 ## Getting Started
+<img src="https://user-images.githubusercontent.com/62579834/230070664-ab9840dc-6bca-4962-b7a5-2590e4aaef32.jpeg" width="400">
 
 ![WhatsApp Image 2023-04-05 at 4 43 00 PM](https://user-images.githubusercontent.com/62579834/230070664-ab9840dc-6bca-4962-b7a5-2590e4aaef32.jpeg)
 ![WhatsApp Image 2023-04-05 at 4 43 01 PM](https://user-images.githubusercontent.com/62579834/230070666-153fa991-c059-4ff9-a5fe-a41aeb7379de.jpeg)
