@@ -3,8 +3,6 @@
 A new Flutter project.
 
 ## Getting Started
-[save energy app (1).pdf](https://github.com/inzmam617/energy_saving_application/files/11158202/save.energy.app.1.pdf)
-
 
 This project is a starting point for a Flutter application.
 
