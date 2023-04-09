@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../Category/Categorypage.dart';
+import '../Contact/contackPage.dart';
 import '../HomePage/homePage.dart';
 import '../InfoPage/InfoPage.dart';
 import '../LocationPage/LocationPage.dart';
@@ -102,6 +103,16 @@ class _BottomBarState extends State<BottomBar> {
                           // color: Colors.grey,
                         )),
                   ),
+                  BottomNavigationBarItem(
+                    label: "Contact",
+                    icon: Container(
+                      //padding: const EdgeInsets.all(7),
+                        child: const Icon(
+                          Icons.person,
+                          // color: Colors.grey,
+                        )),
+                  ),
+
 
                 ],
                 // currentIndex: _selectedIndex,
@@ -126,6 +137,8 @@ class _BottomBarState extends State<BottomBar> {
           CategoryPage(),
           LocationPage(),
           InfoPage(),
+          ContactPage()
+
         ],
       ),
     );

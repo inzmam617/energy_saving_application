@@ -249,7 +249,7 @@ class _Save_Water_PageState extends State<Save_Water_Page> {
                                             MediaQuery.of(context).size.width /
                                                 3 -
                                                 40,
-                                            child: Center(child: Text("Answer"))
+                                            child: Center(child: Text("Switch to showers.",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 15),textAlign: TextAlign.center,))
                                         ),
                                       ]),
                                     ),
@@ -373,7 +373,7 @@ class _Save_Water_PageState extends State<Save_Water_Page> {
                                             MediaQuery.of(context).size.width /
                                                 3 -
                                                 40,
-                                            child: Center(child: Text("Answer"))
+                                            child: Center(child: Text("Keep the sprinklers off.",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 15),textAlign: TextAlign.center,))
                                         ),
                                       ]),
                                     ),
@@ -497,7 +497,7 @@ class _Save_Water_PageState extends State<Save_Water_Page> {
                                             MediaQuery.of(context).size.width /
                                                 3 -
                                                 40,
-                                            child: Center(child: Text("Answer"))
+                                            child: Center(child: Text("Turn off the tap.",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 15),textAlign: TextAlign.center,))
                                         ),
                                       ]),
                                     ),
@@ -630,7 +630,7 @@ class _Save_Water_PageState extends State<Save_Water_Page> {
                                             MediaQuery.of(context).size.width /
                                                 3 -
                                                 40,
-                                            child: Center(child: Text("Answer"))
+                                            child: Center(child: SvgPicture.asset("assets/save-water.svg" ,fit: BoxFit.scaleDown,))
                                         ),
                                       ]),
                                     ),
@@ -754,7 +754,7 @@ class _Save_Water_PageState extends State<Save_Water_Page> {
                                             MediaQuery.of(context).size.width /
                                                 3 -
                                                 40,
-                                            child: Center(child: Text("Answer"))
+                                            child: Center(child: SvgPicture.asset("assets/save.svg",fit: BoxFit.scaleDown,))
                                         ),
                                       ]),
                                     ),
@@ -878,7 +878,7 @@ class _Save_Water_PageState extends State<Save_Water_Page> {
                                             MediaQuery.of(context).size.width /
                                                 3 -
                                                 40,
-                                            child: Center(child: Text("Answer"))
+                                            child: Center(child: SvgPicture.asset("assets/Save_water.svg", fit: BoxFit.scaleDown,))
                                         ),
                                       ]),
                                     ),
@@ -1011,7 +1011,7 @@ class _Save_Water_PageState extends State<Save_Water_Page> {
                                           MediaQuery.of(context).size.width /
                                               3 -
                                               40,
-                                          child: Center(child: Text("Answer"))
+                                          child: Center(child: Text("Fill up the washing up bowl",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 15),textAlign: TextAlign.center,))
                                         ),
                                       ]),
                                     ),
@@ -1135,7 +1135,7 @@ class _Save_Water_PageState extends State<Save_Water_Page> {
                                           MediaQuery.of(context).size.width /
                                               3 -
                                               40,
-                                          child: Center(child: Text("Answer"))
+                                          child:Center(child: Text("Make sure your dishwasher is full",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 15),textAlign: TextAlign.center,))
                                         ),
                                       ]),
                                     ),
@@ -1259,7 +1259,7 @@ class _Save_Water_PageState extends State<Save_Water_Page> {
                                           MediaQuery.of(context).size.width /
                                               3 -
                                               40,
-                                          child: Center(child: Text("Answer"))
+                                          child: Center(child: Text("Use leftover cooking water.",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 15),textAlign: TextAlign.center,))
                                         ),
                                       ]),
                                     ),

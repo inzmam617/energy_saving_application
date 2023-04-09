@@ -14,7 +14,9 @@ class SignUp extends StatelessWidget {
           width: MediaQuery.of(context).size.width,
           height: MediaQuery.of(context).size.height / 2.8,
           color: const Color(0xffC9EAFD),
-          child: SvgPicture.asset("assets/signup.svg"),
+          child: SvgPicture.asset("assets/signup.svg",
+            fit: BoxFit.cover,
+            alignment: FractionalOffset.topCenter,),
         ),
         Padding(
           padding: EdgeInsets.only(top: MediaQuery.of(context).size.height / 3),

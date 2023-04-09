@@ -101,7 +101,7 @@ class ElectricityParagraphPageThree extends StatelessWidget {
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               Text(
-                                "GCC Interconnection Grid​",
+                                "Electricity Demand",
                                 style: TextStyle(
                                     color: Colors.black54, fontSize: 25),
                               ),
@@ -124,7 +124,7 @@ class ElectricityParagraphPageThree extends StatelessWidget {
                               padding: const EdgeInsets.symmetric(horizontal: 20,vertical: 20),
                               child: Padding(
                                 padding: const EdgeInsets.all(10.0),
-                                child: Text("All GCC member states are connected electrically to form the GCC interconnection network. Kahramaa Grid is being connected to the GCC network through 2 X 400 kV circuits from Logistic Zone Super (LZS) substation. This link is proven to be of vital backbone to the Kahramaa network as it is being used for emergency support during incidents, and for bilateral trading at some occasions",
+                                child: Text("The demand for electricity in the State of Qatar has increased in the recent years. The maximum network load increased from 941 MW on 1988 to 3,990 MW on 2008 and reached to 6255 MW in 2012, while the demand jumped to 8600 MW in 2020. An increase in the electrical load of Kahramaa network is expected to reach 8875 MW by the end of August 2021.",
                                   style:TextStyle(color: Colors.black54,fontSize: 18) ,textAlign: TextAlign.start,),
                               ),
                             ),

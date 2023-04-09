@@ -16,10 +16,14 @@ class WaterParagraphPage extends StatelessWidget {
             height: MediaQuery.of(context).size.height / 2.5,
             width: MediaQuery.of(context).size.width,
             child: Stack(children: [
-              Center(
-                child: SvgPicture.asset(
-                  "assets/water-tank-svgrepo-com.svg",
-                  fit: BoxFit.scaleDown,
+              Padding(
+                padding: const EdgeInsets.only(top: 50),
+                child: Center(
+                  child: SvgPicture.asset(
+                    // height: MediaQuery.of(context).size.height / 2.5,
+                    "assets/water-tank-svgrepo-com.svg",
+                    fit: BoxFit.cover,
+                  ),
                 ),
               ),
               Padding(
