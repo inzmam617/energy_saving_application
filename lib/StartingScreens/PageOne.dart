@@ -71,7 +71,8 @@ class PageOne extends StatelessWidget {
                           padding: const EdgeInsets.all(10),
                           child: SvgPicture.asset(
                             "assets/CompositeLayer.svg",
-                            fit: BoxFit.scaleDown,
+                            fit: BoxFit.cover,
+                            // fit: BoxFit.scaleDown,
                             height: 300,
                           ),
                         ),
@@ -81,38 +82,44 @@ class PageOne extends StatelessWidget {
                 ),
                 Expanded(
                   child: Stack(children: [
-                    Column(
-                      children: [
-                        Center(
-                          child: Text(
-                            "Loren ipsum dolor \n sit amet consuter",
-                            style: TextStyle(color: Colors.black, fontSize: 20),
+                    Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 50),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children: [
+                          Center(
+                            child: Text(
+                              "Save water, save electricity, and save the planet with our app.",
+                              style: TextStyle(color: Colors.black, fontSize: 20),
+                              textAlign: TextAlign.center,
+                            ),
                           ),
-                        ),
-                        SizedBox(
-                          height: 20,
-                        ),
-                        Center(
-                          child: Text(
-                            "Lorem ipsum dolor sit amet, \n consectetur adipiscing alit,",
-                            style: TextStyle(color: Colors.black, fontSize: 15),
+                          SizedBox(
+                            height: 20,
                           ),
-                        ),
-                        SizedBox(
-                          height: 20,
-                        ),
-                        Center(
-                          child: SvgPicture.asset("assets/scroll.svg"),
-                        ),
-                      ],
+                          Center(
+                            child: Text(
+                              " Together, we can create a cleaner, healthier, \nand more sustainable world, ,",
+                              style: TextStyle(color: Colors.black, fontSize: 13),
+                              textAlign: TextAlign.center,
+                            ),
+                          ),
+                          SizedBox(
+                            height: 20,
+                          ),
+                          Center(
+                            child: SvgPicture.asset("assets/scroll.svg"),
+                          ),
+                        ],
+                      ),
                     ),
-                    Align(
-                        alignment: Alignment.topRight,
-                        child: SvgPicture.asset(
-                          "assets/Ellipse 10 (1).svg",
-                          fit: BoxFit.scaleDown,
-                          height: 100,
-                        )),
+                    // Align(
+                    //     alignment: Alignment.topRight,
+                    //     child: SvgPicture.asset(
+                    //       "assets/Ellipse 10 (1).svg",
+                    //       fit: BoxFit.scaleDown,
+                    //       height: 100,
+                    //     )),
                     Transform.translate(
                       offset: Offset(100, 100),
                       child: Transform.rotate(

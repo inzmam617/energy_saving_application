@@ -28,9 +28,11 @@ class _WaterQuizState extends State<WaterQuiz> {
               height: MediaQuery.of(context).size.height / 2.5,
               width: MediaQuery.of(context).size.width,
               child: Stack(children: [
-                SvgPicture.asset(
-                  "assets/Group 5265 (1).svg",
-                  fit: BoxFit.cover,
+                Center(
+                  child: SvgPicture.asset(
+                    "assets/women.svg",
+                    fit: BoxFit.cover,
+                  ),
                 ),
                 Padding(
                   padding: const EdgeInsets.only(top: 30, left: 10),

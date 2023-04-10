@@ -19,7 +19,7 @@ class WaterParagraphPageTwo extends StatelessWidget {
               Center(
                 child: SvgPicture.asset(
                   "assets/fountain-svgrepo-com.svg",
-                  fit: BoxFit.scaleDown,
+                  fit: BoxFit.cover,
                 ),
               ),
               Padding(
@@ -37,15 +37,15 @@ class WaterParagraphPageTwo extends StatelessWidget {
                   ),
                 ),
               ),
-              Transform.translate(
-                offset: const Offset(-210, 50),
-                child: Align(
-                    alignment: Alignment.bottomLeft,
-                    child: SvgPicture.asset(
-                      "assets/Group 5262.svg",
-                      fit: BoxFit.cover,
-                    )),
-              )
+              // Transform.translate(
+              //   offset: const Offset(-210, 50),
+              //   child: Align(
+              //       alignment: Alignment.bottomLeft,
+              //       child: SvgPicture.asset(
+              //         "assets/Group 5262.svg",
+              //         fit: BoxFit.cover,
+              //       )),
+              // )
             ]),
           ),
           Container(

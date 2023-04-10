@@ -43,17 +43,21 @@ class HomePage extends StatelessWidget {
                               border: Border.all(color: Colors.black),
                               borderRadius:
                                   const BorderRadius.all(Radius.circular(100)),
-                              image: const DecorationImage(
+                              image:  DecorationImage(
                                   fit: BoxFit.cover,
-                                  image: AssetImage(
-                                    "assets/prof.jpg",
-                                  ))),
+                                  alignment: FractionalOffset.topCenter,
+                                  image: AssetImage("assets/vector-chador-headgear-style-beautiful-arabic-muslim-woman-vector-chador-headgear-style-beautiful-arabic-muslim-woman-illustration-106204293.jpg")
+                              )
+                          ),
+                          // child:  SvgPicture.asset("assets/women.svg",
+                          //   fit: BoxFit.cover,
+                          //   alignment: FractionalOffset.topCenter,),
                         ),
                         const SizedBox(
                           width: 10,
                         ),
                         const Text(
-                          "Hello Ahmad",
+                          "Hello Sarah",
                           style: TextStyle(
                               color: Colors.black, fontWeight: FontWeight.bold),
                         )

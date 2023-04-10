@@ -40,15 +40,15 @@ class ElectricityParagraphPageTwo extends StatelessWidget {
                   ),
                 ),
               ),
-              Transform.translate(
-                offset: const Offset(-210, 50),
-                child: Align(
-                    alignment: Alignment.bottomLeft,
-                    child: SvgPicture.asset(
-                      "assets/Group 5262.svg",
-                      fit: BoxFit.cover,
-                    )),
-              )
+              // Transform.translate(
+              //   offset: const Offset(-210, 50),
+              //   child: Align(
+              //       alignment: Alignment.bottomLeft,
+              //       child: SvgPicture.asset(
+              //         "assets/Group 5262.svg",
+              //         fit: BoxFit.cover,
+              //       )),
+              // )
             ]),
           ),
           Container(

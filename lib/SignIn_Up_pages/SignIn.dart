@@ -23,7 +23,10 @@ class _SignInState extends State<SignIn> {
           width: MediaQuery.of(context).size.width,
           height: MediaQuery.of(context).size.height / 2.8,
           color: const Color(0xffC9EAFD),
-          child: SvgPicture.asset("assets/login.svg"),
+          child: SvgPicture.asset("assets/login.svg",
+            fit: BoxFit.cover,
+            alignment: FractionalOffset.topCenter, // set the alignment to the bottom center
+          ),
         ),
         Padding(
           padding: EdgeInsets.only(top: MediaQuery.of(context).size.height / 3),

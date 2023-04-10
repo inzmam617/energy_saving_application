@@ -21,7 +21,7 @@ class ElectricityParagraphPageOne extends StatelessWidget {
                   padding: const EdgeInsets.symmetric(vertical: 20),
                   child: SvgPicture.asset(
                     "assets/cables-cable-svgrepo-com.svg",
-                    fit: BoxFit.scaleDown,
+                    fit: BoxFit.cover,
                   ),
                 ),
               ),
@@ -40,15 +40,15 @@ class ElectricityParagraphPageOne extends StatelessWidget {
                   ),
                 ),
               ),
-              Transform.translate(
-                offset: const Offset(-210, 50),
-                child: Align(
-                    alignment: Alignment.bottomLeft,
-                    child: SvgPicture.asset(
-                      "assets/Group 5262.svg",
-                      fit: BoxFit.cover,
-                    )),
-              )
+              // Transform.translate(
+              //   offset: const Offset(-210, 50),
+              //   child: Align(
+              //       alignment: Alignment.bottomLeft,
+              //       child: SvgPicture.asset(
+              //         "assets/Group 5262.svg",
+              //         fit: BoxFit.cover,
+              //       )),
+              // )
             ]),
           ),
           Container(

@@ -82,38 +82,43 @@ class PageThree extends StatelessWidget {
                 ),
                 Expanded(
                   child: Stack(children: [
-                    Column(
-                      children: [
-                        Center(
-                          child: Text(
-                            "Loren ipsum dolor \n sit amet consuter",
-                            style: TextStyle(color: Colors.black, fontSize: 20),
+                    Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 50),
+                      child: Column(
+                        children: [
+                          Center(
+                            child: Text(
+                              "Welcome to our app  \n dedicated to helping you",
+                              style: TextStyle(color: Colors.black, fontSize: 20),
+                              textAlign: TextAlign.center,
+                            ),
                           ),
-                        ),
-                        SizedBox(
-                          height: 20,
-                        ),
-                        Center(
-                          child: Text(
-                            "Lorem ipsum dolor sit amet, \n consectetur adipiscing alit,",
-                            style: TextStyle(color: Colors.black, fontSize: 15),
+                          SizedBox(
+                            height: 20,
                           ),
-                        ),
-                        SizedBox(
-                          height: 20,
-                        ),
-                        Center(
-                          child: SvgPicture.asset("assets/scroll.svg"),
-                        ),
-                      ],
+                          Center(
+                            child: Text(
+                              " save water and electricity. Join us in our mission  \n to conserve resources and protect the environment,",
+                              style: TextStyle(color: Colors.black, fontSize: 13),
+                              textAlign: TextAlign.center,
+                            ),
+                          ),
+                          SizedBox(
+                            height: 20,
+                          ),
+                          Center(
+                            child: SvgPicture.asset("assets/scroll.svg"),
+                          ),
+                        ],
+                      ),
                     ),
-                    Align(
-                        alignment: Alignment.topRight,
-                        child: SvgPicture.asset(
-                          "assets/Ellipse 10 (1).svg",
-                          fit: BoxFit.scaleDown,
-                          height: 100,
-                        )),
+                    // Align(
+                    //     alignment: Alignment.topRight,
+                    //     child: SvgPicture.asset(
+                    //       "assets/Ellipse 10 (1).svg",
+                    //       fit: BoxFit.scaleDown,
+                    //       height: 100,
+                    //     )),
                     Transform.translate(
                       offset: Offset(100, 100),
                       child: Transform.rotate(
